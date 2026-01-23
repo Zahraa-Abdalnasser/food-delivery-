@@ -58,3 +58,6 @@ The systme should have a very secured and protected payment ways.
 
 ## Sequence diagram:
 ![Digram](https://raw.githubusercontent.com/Zahraa-Abdalnasser/food-delivery-/refs/heads/main/Food%20delivery%20Sequence%20diagram.drawio.svg)
+
+## Entity Relationship:
+![Diagram](https://raw.githubusercontent.com/Zahraa-Abdalnasser/food-delivery-/refs/heads/main/Entity%20Relationship%20Diagram.drawio.svg)
