@@ -61,3 +61,16 @@ The systme should have a very secured and protected payment ways.
 
 ## Entity Relationship:
 ![Diagram](https://raw.githubusercontent.com/Zahraa-Abdalnasser/food-delivery-/refs/heads/main/Entity%20Relationship%20Diagram.drawio.svg)
+
+## Pseudo code:
+```
+                                    function place-order(object cart )
+                                     {
+                                         check-payment-method;
+                                         Enter-address-info;
+                                         save(cart);
+                                         print(successfully submitted order!);
+                                        send-notification();
+                                     }
+
+```
