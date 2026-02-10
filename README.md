@@ -89,27 +89,46 @@ total time : 14h
 ## Cart management :
 ### addToCart 
 ```
-Post : /api/v1/cart/item(id) 
-input : item_id , cart_id
+Post : /api/v1/carts/{cart_id}/items 
+input : item_id , cart_id , cust_id , quantity 
 output : status code 201 .
 ```
 ### clearCart 
 ```
-delet : /api/v1/cart/item(id)
+delete : /api/v1/carts/{cart_id}/items
 input : cart_id , item_id
 output : status code 200 .
 ```
 ## Order management 
 ### estimateOrder
 ```
-get : api/v1/order/order{id}
+post : api/v1/orders
 input : cart_id , cust_id
 output : total_cost , total_amount .
 ```
 ## Payment management 
 ### estimatePayment 
 ```
-get : api/v1/payment
+get : api/v1/payments/estimate
 input : order_id , payment_method
 output : staus code 200 
+```
+## Resturent management
+### addResturent
+```
+post : api/v1/resturents
+input : rest_name, location , menue , work_duration
+output : "done" status code 201.
+```
+### deleteResturent 
+```
+delete : api/v1/resturents/{restruent_Id}
+input : resturent_Id
+output : "done" status code 200
+```
+### rateResturent
+```
+post : api/v1/resturents/{resturent_id}
+input : restruent_id , rate
+output : "thanks for rating" status code 201
 ```
