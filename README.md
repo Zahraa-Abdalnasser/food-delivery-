@@ -74,3 +74,31 @@ The systme should have a very secured and protected payment ways.
                                      }
 
 ```
+# API designe :
+## Cart management :
+### addToCart 
+```
+Post : /api/v1/cart/item(id) 
+input : item_id , cart_id
+output : status code 201 .
+```
+### clearCart 
+```
+delet : /api/v1/cart/item(id)
+input : cart_id , item_id
+output : status code 200 .
+```
+## Order management 
+### estimateOrder
+```
+get : api/v1/order/order{id}
+input : cart_id , cust_id
+output : total_cost , total_amount .
+```
+## Payment management 
+### estimatePayment 
+```
+get : api/v1/payment
+input : order_id , payment_method
+output : staus code 200 
+```
