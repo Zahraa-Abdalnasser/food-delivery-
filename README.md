@@ -74,6 +74,17 @@ The systme should have a very secured and protected payment ways.
                                      }
 
 ```
+# Resturent and menue estimate time :
+- To esimate a task time nearly correct , we uselly take in mind some objects that may affect on the total needed time like testing , deployment or meetings time.
+  
+| TaskName |   Type   | Estimeate T|
+|----------|----------|------------|
+| DB design|   DBA    |     3h    |
+|Implement |   DEV    |     6h     |
+|Test      | Tester   |     2h     |
+|Deploy    | DevOps   |     3h     |
+total time : 14h 
+
 # API designe :
 ## Cart management :
 ### addToCart 
